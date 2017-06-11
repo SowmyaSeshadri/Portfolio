@@ -1,0 +1,23 @@
+body{
+  text-align: center;
+}
+
+img{
+animation:spin 1s ease-in-out 1;
+animation-delay: 0.3s;
+position: relative;
+}
+@keyframes spin {
+  100%{
+    transform: rotate(360deg);
+  }
+  }
+.hello{
+  position: absolute;
+  top:220px;
+  left:580px;
+  animation:spin 1s ease-in-out 1;
+  font-family: 'Dosis', sans-serif;
+  color: black;
+  font-size: 50px;
+}
