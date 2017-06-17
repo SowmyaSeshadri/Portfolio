@@ -32,10 +32,16 @@ position: relative;
   margin: 50px 30px 0 30px;
 }
 .who{
-  font-family: 'Nunito', sans-serif;
-  font-size: 32px;
-  text-decoration: underline;
-  margin-top: 40px;
+    font-family: 'Lobster', cursive;
+  font-size: 40px;
+  margin-top: 30px;
+  color:#FF8A80;
+}
+.who:hover{
+  /*text-decoration: underline;
+  text-decoration-color:  #ff2d2d;
+  cursor: pointer;*/
+  font-size: 42px;
 }
 .highlight{
   color:#ff2d2d;
@@ -49,17 +55,16 @@ position: relative;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: normal;
-    float:left;
-    margin-left: 200px;
+    /*margin-left: 200px;*/
     list-style-type: none;
 }
+
 .listright{
-  margin-top:40px;
+    margin-top:40px;
   display: inline-block;
-  margin-right: 250px;
+  /*margin-right: 250px;*/
   text-decoration: none;
   text-align: left;
-  float:right;
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   font-weight: normal;
@@ -105,6 +110,7 @@ li{
   width:400px;
   height: 500px;
   text-align: center;
+  border-radius: 30%;
   border:1px solid #d3d3d3;
   margin: 20px 60px 0 60px;
 }
@@ -145,22 +151,67 @@ li{
   margin-top: 200px;
   font-size: 40px;
   margin-bottom: 0px;
+  color:#FF8A80;
   font-weight: bold;
   font-family: 'Nunito', sans-serif;
+}
+.contact:hover{
+  font-size: 42px;
 }
 .end{
   margin-top: 0px;
   font-size: 30px;
   font-weight: normal;
   margin-bottom: 300px;
+  color:black;
   text-decoration: none;
   font-family: 'Nunito', sans-serif;
+}
+.end:hover{
+  color:#FF8A80;
+  font-size: 32px;
 }
 .logolinked{
   height: 30px;
   width: 30px;
   margin-top: 10px;
 }
+.left{
+  margin-left: 20px;
+}
 .low{
   margin-bottom: 300px;
+  text-align: center;
+}
+.aboutMe{
+  padding:30px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 20px 70px 0 70px;
+}
+.aboutMeHead{
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  margin-bottom: 0;
+  color:#FF8A80;
+  margin-top: 40px;
+}
+.aboutMeHead:hover{
+  /*text-decoration: underline;
+  text-decoration-color:  #ff2d2d;*/
+  font-size: 42px;
+}
+.paragraph{
+  margin-top: 50px;
+}
+.glyphicon-star{
+  color:#ff2d2d;
+}
+.glyphicon{
+  margin-left: 5px;
+}
+.names{
+  min-width:170px;
+  display: inline-block;
 }
