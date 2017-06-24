@@ -1,13 +1,13 @@
 body{
   text-align: center;
   margin-bottom: 200px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .img{
 animation:spin 1s ease-in-out 1;
 animation-delay: 0.3s;
-margin-top: 50px;
+margin-top: 20px;
 position: relative;
 }
 @keyframes spin {
@@ -32,7 +32,8 @@ position: relative;
   margin: 50px 30px 0 30px;
 }
 .who{
-    font-family: 'Lobster', cursive;
+
+  font-family: 'Patrick Hand SC', cursive;
   font-size: 40px;
   margin-top: 30px;
   color:#FF8A80;
@@ -52,7 +53,7 @@ position: relative;
   text-align: left;
   text-decoration: none;
   display: inline-block;
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     font-weight: normal;
     /*margin-left: 200px;*/
@@ -65,7 +66,7 @@ position: relative;
   /*margin-right: 250px;*/
   text-decoration: none;
   text-align: left;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   font-weight: normal;
     list-style-type: none;
@@ -110,7 +111,7 @@ li{
   width:400px;
   height: 500px;
   text-align: center;
-  border-radius: 30%;
+  border-radius: 20%;
   border:1px solid #d3d3d3;
   margin: 20px 60px 0 60px;
 }
@@ -130,30 +131,31 @@ li{
 .head{
   font-size: 20px;
   font-weight: normal;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .subhead{
   font-size: 16px;
   font-weight: normal;
   color:#aaaaaa;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .subsub{
   font-size: 18px;
   font-weight: normal;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   padding: 0px 20px 0 20px;
   margin-top: 25px;
   display: inline-block;
   vertical-align: top;
 }
 .contact{
-  margin-top: 200px;
+  margin-top: 180px;
   font-size: 40px;
   margin-bottom: 0px;
   color:#FF8A80;
   font-weight: bold;
-  font-family: 'Nunito', sans-serif;
+
+  font-family: 'Patrick Hand SC', cursive;
 }
 .contact:hover{
   font-size: 42px;
@@ -165,7 +167,7 @@ li{
   margin-bottom: 300px;
   color:black;
   text-decoration: none;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .end:hover{
   color:#FF8A80;
@@ -185,14 +187,15 @@ li{
 }
 .aboutMe{
   padding:30px;
-  font-family: 'Nunito', sans-serif;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: normal;
   margin: 20px 70px 0 70px;
 }
 .aboutMeHead{
-  font-family: 'Lobster', cursive;
+  /*font-family: 'Lobster', cursive;*/
   font-size: 40px;
+  font-family: 'Patrick Hand SC', cursive;
   margin-bottom: 0;
   color:#FF8A80;
   margin-top: 40px;
@@ -214,4 +217,46 @@ li{
 .names{
   min-width:170px;
   display: inline-block;
+}
+.todo{
+  text-decoration: none;
+  color:#FF8A80;
+}
+.sidebar{
+  width:100%;
+  height:100px;
+  /*background-color: #ff2d2d;*/
+  /*margin-top: 40px;*/
+  /*float:left;*/
+  display: flex;
+}
+.icons{
+  font-size: 25px;
+  color: #ff2d2d;
+  margin-top: 30px;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.iconNames{
+  display: none;
+  font-family: 'Nunito', sans-serif;
+}
+.tabcontent{
+  align-items: center;
+  display: inline-block;
+}
+.homeIcon:hover{
+  color:black;
+}
+.expIcon:hover{
+  color:black;
+}
+.aboutIcon:hover{
+  color:black;
+}
+.skillIcon:hover{
+  color:black;
+}
+.contactIcon:hover{
+  color:black;
 }
