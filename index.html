@@ -2,9 +2,10 @@
 
 <head>
 
-    <title>Sowmya Seshadri-Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="index.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <script src="jquery-1.6.1-min.js"></script>
     <!-- Latest compiled and minified CSS -->
@@ -18,49 +19,42 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row slab1">
-            <img class="img" src="./Portfolio.jpg" alt="">
+  <div class = "container-fluid">
+    <div class="tabs">
+
+          <div class="sidebar">
+              <div class="tablinks" onclick='openCity(event,"home")'><span class="icons glyphicon glyphicon-home homeIcon "><p class="iconNames">Home</p></span></div>
+              <div class="tablinks" onclick='openCity(event,"about")'><span class="icons glyphicon glyphicon-eye-open aboutIcon "><p class="iconNames">About Me</p></span></div>
+              <div class="tablinks" onclick='openCity(event,"skills")'><span class="icons glyphicon glyphicon-education skillIcon"><p class="iconNames">Skills</p></span></div>
+              <div class="tablinks" onclick='openCity(event,"exp")'><span class= "icons glyphicon glyphicon-briefcase expIcon"><p class="iconNames">Experience</p></span></div>
+              <div class="tablinks" onclick='openCity(event,"con")'><span class="icons glyphicon glyphicon-user contactIcon"><p class="iconNames">Contact</p></span></div>
+          </div>
+    </div>
+    <div class="row slab1">
+          <div class="tabcontent" id="home">
+            <img class="img"src="./portfolio.jpg" alt="">
             <!-- <p class="hello">Hello..</p> -->
-        </div>
+      </div>
+      </div>
 
         <div class = "paragraph">
+          <div class="tabcontent" id="about">
         <div class="row">
             <p class="aboutMeHead">ABOUT ME</p>
         </div>
         <div class="row">
-            <p class="aboutMe">I am <span class="highlight">Sowmya Seshadri</span>, an <span class="highlight">UI/UX Developer</span> from Chennai.I will be graduating from Sri Venkateswara College Of Engineering (SVCE) in 2018. I'm an enthusiastic learner, who loves
+            <p class="aboutMe">I am <span class="highlight">Sowmya Seshadri</span>, a <span class="highlight">UI Developer</span> from Chennai.I will be graduating from Sri Venkateswara College Of Engineering (SVCE) in 2018. I'm an enthusiastic learner, who loves
             to learn and experiment new things and I'm very passionate about designing and developing creative stuffs.I dig codes to learn how it works and I intend to make code more readable,efficient and expressive.</p>
         </div>
-        <div class="row">
-            <p class="who">Skills</p>
-        </div>
-        <!-- <div class="row">
-            <ul class="listleft">
-                <li>HTML
-                    <div class="back"><span class="on on1"></span></div>
-                </li>
-                <li>CSS
-                    <div class="back"><span class="on on2"></span></div>
-                </li>
-                <li>JavaScript
-                    <div class="back"><span class="on on3"></span></div>
-                </li>
-            </ul>
+      </div>
+</div>
 
-            <ul class="listright">
-                <li>Bootstrap
-                    <div class="back"><span class="one on2"></span></div>
-                </li>
-                <li>Sass
-                    <div class="back"><span class="one on4"></span></div>
-                </li>
-                <li>jQuery
-                    <div class="back"><span class="one on3"></span></div>
-                </li>
-            </ul>
-        </div> -->
-        <div class="row">
+
+
+            <div class="row">
+                      <div class="tabcontent" id="skills">
+                <p class="who">Skills</p>
+
             <ul class="listleft">
                 <li><div class="names">HTML</div>
             <span class="glyphicon glyphicon-star"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span>
@@ -87,14 +81,17 @@
         </div>
 
       </div>
+
+
         <div class="row">
+          <div class="tabcontent" id="exp">
             <p class="who">Work Experience</p>
             <div class="expbox">
                 <div class="expcircle"><img class="logo" src="./nfnlabs.jpeg" alt="NFNLabs"></div>
                 <p class="head"><b>NFN Labs,Chennai</b></p>
                 <p class="head">UI/UX Developer Intern</p>
                 <p class="subhead">April 2017-Present</p>
-                <p class="subsub">Developing various websites using HTML,CSS,JavaScript,jQuery with an eye on mobile-first responsive design.</p>
+                <p class="subsub">Built a simple responsive <a class="todo" href="https://sowmyaseshadri.github.io/Todo/">To-Do</a> web application involving online spreadsheet API,AJAX calls and technologies such as jQuery,Sass and Bootstrap. </p>
             </div>
 
             <div class="expbox">
@@ -102,22 +99,54 @@
                 <p class="head"><b>CRB Innovative Solutions,Chennai</b></p>
                 <p class="head">Front End Web Developer Intern</p>
                 <p class="subhead">December 2016</p>
-                <p class="subsub">Designing and developing responsive web pages with a focus on the client side.</p>
+                <p class="subsub">Designed and developed various responsive web pages with frameworks such as Bootstrap.</p>
             </div>
 
         </div>
+      </div>
+
 
         <div class="row low">
+          <div  class="tabcontent" id="con">
             <p class="contact">Contact Me</p>
             <a class="end" href="#">seshadrisowmya5@gmail.com</a>
             <br/>
             <div class="logos">
-            <a href="https://www.linkedin.com/in/sowmya-seshadri-b216a913a/"><img class="logolinked" src="./LinkedIn.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/sowmya-seshadri-b216a913a/"><img class="logolinked" src="./linkedin.png" alt=""></a>
             <a href="https://github.com/SowmyaSeshadri"><img class="logolinked left" src="./git.png" alt=""></a>
         </div>
       </div>
-
     </div>
+    </div>
+
 </body>
+<script>
+  $(".sidebar").on("mouseenter mouseleave",function(){
+    $(".iconNames").fadeToggle(200)
+  })
+
+
+
+  function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
 
 </html>
